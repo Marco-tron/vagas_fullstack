@@ -21,23 +21,13 @@
 
   <BestProducts/>
 
-  <div class="shape_1">
-    <img src="~/assets/shape_1.png" alt="">
-  </div>
-  <div class="shape_2">
-    <img src="~/assets/shape_2.png" alt="">
-  </div>
-  <div class="shape_3">
-    <img src="~/assets/shape_3.png" alt="">
-  </div>
-  <div class="shape_4">
-    <img src="~/assets/shape_4.png" alt="">
-  </div>
+  <Background/>
   
 </div>
 </template>
 
 <script>
+import Background from '~/components/Background'
 import Title from '~/components/Title.vue'
 import Content from '~/components/Content.vue'
 import Video from '~/components/Video.vue'
@@ -46,7 +36,7 @@ import TitleInvert from '~/components/TitleInvert.vue'
 import BestProducts from '~/components/BestProducts.vue'
 
 export default {
-  components: {Title,Content,Video,Brands,TitleInvert,BestProducts}
+  components: {Title,Content,Video,Brands,TitleInvert,BestProducts,Background}
 }
 </script>
 
