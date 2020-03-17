@@ -36,7 +36,8 @@ import TitleInvert from '~/components/TitleInvert.vue'
 import BestProducts from '~/components/BestProducts.vue'
 
 export default {
-  components: {Title,Content,Video,Brands,TitleInvert,BestProducts,Background}
+  components: {Title,Content,Video,Brands,TitleInvert,BestProducts,Background},
+  
 }
 </script>
 
