@@ -21,5 +21,6 @@ export default {
         margin-top: 150px;
         margin-left: 115px;
         margin-right: 115px;
+        height: 615px;
     }
 </style>
