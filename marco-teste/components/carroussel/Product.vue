@@ -1,5 +1,5 @@
 <template>
-<div class="product-container">
+<div class="product-container ">
     <Badge/>
     <div class="image">
         <img src="~/assets/product-image.png" alt="">
@@ -69,4 +69,11 @@ export default {
     h3 strong{
         color: #5555d9;
     }
+
+@media (max-width: 1300px) {
+    .product-container{
+        margin-right: 100px;
+    }
+}
+    
 </style>

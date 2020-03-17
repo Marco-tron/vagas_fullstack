@@ -1,7 +1,7 @@
 <template>
 
   <div v-swiper:mySwiper="swiperOption">
-      <div class="swiper-wrapper">
+      <div class="swiper-wrapper" >
         <div class="swiper-slide">
           <Product/>
         </div>
@@ -28,7 +28,6 @@
 
 <script>
 import Product from '~/components/carroussel/Product.vue'
-
 export default {
   components: {Product,},
 
@@ -47,11 +46,16 @@ export default {
             prevEl: '.swiper-button-prev'
         },
         mobile:false
-      }
+      },
+      
+      
     }
+    
   },  
+  
 
 }
+
 
 
 </script>
@@ -86,6 +90,10 @@ export default {
         background-color: red;
       }
     }
+  }
+
+  .swiper-slide{
+    margin-right: 100%;
   }
 }
 
