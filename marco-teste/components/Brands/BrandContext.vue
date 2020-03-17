@@ -16,12 +16,23 @@ export default {
 </script>
 
 <style scoped>
-  
-    .brand-context{
+  @media (min-width: 1300px){
+      .brand-context{
         text-align: left;
     }
     .brand-context div{
         font-size: 1.4rem;
         margin-bottom: 80px;
     }
+  }
+  @media (max-width: 1300px){
+      .brand-context{
+        text-align: center;
+    }
+    .brand-context div{
+        font-size: 1.4rem;
+        margin-bottom: 60px;
+    }
+  }
+    
 </style>

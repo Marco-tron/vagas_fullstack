@@ -1,9 +1,11 @@
 <template>
 <div class="brands">
     
-    <h1> <strong>Marcas do app em destaque</strong> </h1>
+    <h2> <strong>Marcas do app em destaque</strong> </h2>
 
-    <div style="display:flex;justify-content:space-between;margin">
+    <div class="brands-box">
+        
+        <BrandsLogos/>
         <div class="brands-context">
 
             <BrandContext/>
@@ -11,9 +13,6 @@
             <BrandContext/>
               
         </div>
-
-        <BrandsLogos/>
-
     </div>
     
 </div>
@@ -30,6 +29,7 @@ export default {
 </script>
 
 <style scoped>
+@media (min-width: 1300px) {
     .brands{
         height:850px;
         align-content: center;
@@ -41,14 +41,42 @@ export default {
         margin-left: 115px;
         margin-right: 115px;
     }
+    h2{
+        margin-bottom: 40px;
+    }
+    .brands-context{
+        position: absolute;
+        left: 115px;
+        height:600px;
+        width: 600px;
+    }
+    .brands-box{
+        display:flex;
+        justify-content:space-between;
+        
+    }
+}
+@media (max-width: 1300px) {
+    .brands{
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #606060;
+        padding-top: 40px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
     h1{
         margin-bottom: 40px;
     }
     .brands-context{
-        
-        
-        height:600px;
-        width: 600px;
+        text-align: center;
+    
     }
+    h2{
+        margin-bottom: 30px;
+    }
+}    
     
 </style>

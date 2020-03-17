@@ -18,9 +18,18 @@ export default {
 </script>
 
 <style scoped>
+@media (min-width: 1300px) {
     .brands-logos{
-        
+        position: absolute;
+        right: 115px;
         height:600px;
         width: 600px;
     }
+}
+@media (max-width: 1300px) {
+    .brands-logos{
+        
+    }
+}
+    
 </style>
