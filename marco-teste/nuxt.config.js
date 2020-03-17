@@ -23,13 +23,14 @@ export default {
   ** Global CSS
   */
   css: [
+    'swiper/dist/css/swiper.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
     '~/plugins/axios.js',
-    '~plugins/VueAwesomeSwiper.js'
+    {src:'~plugins/VueAwesomeSwiper.js', ssr:false}
   ],
   /*
   ** Nuxt.js dev-modules
