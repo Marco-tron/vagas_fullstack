@@ -1,11 +1,6 @@
-const mongoose =require('mongoose');
+const mongoose =require('../database');
 
 const ProductSchema = new mongoose.Schema({
-    productid:{
-        type: String,
-        required: true,
-        unique: true,
-    },
     storeid:{
         type: String,
         required: true,
