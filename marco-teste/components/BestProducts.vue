@@ -7,8 +7,13 @@
       <strong>Ver todos</strong> 
   </div>
   </div>
+  <div class="desktop">
+    <Carroussel slides="4"/>
+  </div>
+  <div class="mobile">
+    <Carroussel slides="1"/>
+  </div>
   
-  <Carroussel/>
 </div>
 </template>
 
@@ -42,6 +47,9 @@ export default {
     user-select: none;
     cursor: pointer;
   } 
+  .mobile{
+    display: none;
+  } 
 }
 
 @media (max-width: 1300px) {
@@ -62,6 +70,9 @@ export default {
     margin-top: 10px;
     user-select: none;
     cursor: pointer;
+  }
+  .desktop{
+    display: none;
   }  
 }
     

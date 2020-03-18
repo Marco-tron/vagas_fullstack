@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="Mcontainer">
     <nuxt />
 
     <footer>
@@ -61,6 +61,10 @@
 </template>
 
 <style>
+  
+  
+  
+  
   footer .download{
     display: flex;
     align-items: center;

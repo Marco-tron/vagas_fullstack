@@ -30,12 +30,12 @@
 import Product from '~/components/carroussel/Product.vue'
 export default {
   components: {Product,},
-
+  props:['slides'],
   data () {
     return {
       swiperOption: {
         loop: true,
-        slidesPerView: 4,
+        slidesPerView: this.slides,
         slidesPerGroup:1,
         pagination: {
           el: '.swiper-pagination',
@@ -92,9 +92,6 @@ export default {
     }
   }
 
-  .swiper-slide{
-    margin-right: 100%;
-  }
 }
 
 
