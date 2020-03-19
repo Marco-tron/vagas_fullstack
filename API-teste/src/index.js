@@ -6,7 +6,8 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
-require('./controllers/getController')(app);
+require('./controllers/ProductController')(app);
+require('./controllers/StoreController')(app);
 
 
 app.listen(8080)
