@@ -9,10 +9,10 @@ router.post('/products', async(req,res) =>{
     try{
         const product = await Product.create(req.body);
 
-        return res.send({user});
+        return res.send({product});
     }
     catch(err) {
-        return res.status(400).send({errpr:'Product registration failed'});
+        return res.status(400).send({error:'Product registration failed'});
     }
 })
 
@@ -20,10 +20,10 @@ router.post('/stores', async(req,res) =>{
     try{
         const store = await Store.create(req.body);
 
-        return res.send({user});
+        return res.send({store});
     }
     catch(err) {
-        return res.status(400).send({errpr:'Store registration failed'});
+        return res.status(400).send({error:'Store registration failed'});
     }
 })
 
