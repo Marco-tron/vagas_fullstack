@@ -17,10 +17,18 @@ router.post('/', async(req,res) =>{
 })
 
 router.get('/', function(req, res, next) {
+  
+    let limit= Number(req.query.limit)||10;
+    let offset= Number(req.query.offset)||0;
+    let descending=Boolean(req.query.descending)||false;
+    
     Store.find(function (err, stores) {
       if (err) return next(err);
       res.json(stores);
-    });
+    })
+    .skip(offset)
+    .limit(limit)
+    .sort('-name')
 });
 
 router.put('/:id', function(req, res, next) {

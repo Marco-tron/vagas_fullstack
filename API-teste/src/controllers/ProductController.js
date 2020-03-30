@@ -1,5 +1,7 @@
 const express = require('express');
-
+const bodyParser = require('body-parser');
+const url = require('url');
+const querystring = require('querystring');
 const Product = require ('../models/Product');
 
 
@@ -17,7 +19,8 @@ router.post('/', async(req,res) =>{
 })
 
 router.get('/', function(req, res, next) {
-    Product.find(function (err, products) {
+    Product.limit(1).find(function (err, products) {
+      
       if (err) return next(err);
       res.json(products);
     });
@@ -27,6 +30,7 @@ router.put('/:id', function(req, res, next) {
     Product.findByIdAndUpdate(req.params.id, req.body, function (err, post) {
       if (err) return next(err);
       res.json(post);
+      
     });
 });
 

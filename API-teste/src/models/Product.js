@@ -2,7 +2,8 @@ const mongoose =require('../database');
 
 const ProductSchema = new mongoose.Schema({
     storeid:{
-        type: String,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Store',
         required: true,
     },
     price:{
